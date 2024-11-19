@@ -1,0 +1,114 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Background and Centering */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #4A90E2, #9013FE);
+    color: #333;
+}
+
+/* Title Styling */
+h1 {
+    color: #000000;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Image Styling */
+img {
+    max-width: 90%;
+    height: auto;
+    margin-bottom: 1.5rem;
+    border: 2px solid #4A90E2;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estimated Crowd Count */
+h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* Link Styling */
+a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Form Container */
+form {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Input Field Styling */
+input[type="file"] {
+    display: block;
+    margin: 1rem auto;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Submit Button Styling */
+input[type="submit"] {
+    background-color: #4A90E2;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 1rem;
+}
+
+input[type="submit"]:hover {
+    background-color: #9013FE;
+    transform: scale(1.05);
+}
+
+/* Footer Text */
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    color: #eee;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
