@@ -5,11 +5,21 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>Upload an Image</h1>
+    <h1>Welcome to Crowd Detection</h1>
+
+    <h2>Option 1: Upload an Image to Predict</h2>
     <form action="/predict" method="post" enctype="multipart/form-data">
         <input type="file" name="image" accept="image/*" required>
         <input type="submit" value="Submit">
     </form>
+
+    <h2>Option 2: Compare Prediction Using Image and Mat File</h2>
+    <form action="/compare" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <input type="file" name="matfile" accept=".mat" required>
+        <input type="submit" value="Submit">
+    </form>
+
     <footer>
         <p>Powered by <a href="#">Crowd Detection AI</a></p>
     </footer>

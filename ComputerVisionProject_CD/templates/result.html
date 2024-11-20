@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Results</title>
+</head>
+<body>
+    <h1>Prediction Results</h1>
+    <h3>Crowd Count: {{ crowd_count }}</h3>
+
+    <h3>Uploaded Image:</h3>
+    <img src="data:image/png;base64,{{ uploaded_img }}" alt="Uploaded Image">
+
+    <h3>Ground Truth Density Map:</h3>
+    <img src="data:image/png;base64,{{ gt_img }}" alt="Ground Truth">
+
+    <h3>Predicted Density Map:</h3>
+    <img src="data:image/png;base64,{{ pred_img }}" alt="Predicted Density Map">
+
+    <br><br>
+    <a href="/">Go back</a>
+</body>
+</html>

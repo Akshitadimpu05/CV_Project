@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparison Result</title>
+</head>
+<body>
+    <h1>Uploaded Image</h1>
+    <img src="data:image/png;base64,{{ uploaded_img }}" alt="Uploaded Image">
+
+    <h1>Ground Truth Density Map</h1>
+    <img src="data:image/png;base64,{{ gt_img }}" alt="Ground Truth Density Map">
+
+    <h1>Predicted Density Map</h1>
+    <img src="data:image/png;base64,{{ pred_img }}" alt="Predicted Density Map">
+
+    <h2>Estimated Crowd Count: {{ crowd_count }}</h2>
+
+    <br>
+    <a href="/">Upload another set</a>
+</body>
+</html>

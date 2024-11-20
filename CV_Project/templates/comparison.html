@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparison of Results</title>
+</head>
+<body>
+    <h1>Comparison of Results</h1>
+
+    <h2>Set 1</h2>
+    <p>Ground Truth Density Map</p>
+    <img src="data:image/png;base64,{{ gt_img_set1 }}" alt="Ground Truth Set 1">
+    <p>Predicted Density Map</p>
+    <img src="data:image/png;base64,{{ pred_img_set1 }}" alt="Prediction Set 1">
+    <p>Estimated Crowd Count: {{ crowd_count_set1 }}</p>
+
+    <h2>Set 2</h2>
+    <p>Ground Truth Density Map</p>
+    <img src="data:image/png;base64,{{ gt_img_set2 }}" alt="Ground Truth Set 2">
+    <p>Predicted Density Map</p>
+    <img src="data:image/png;base64,{{ pred_img_set2 }}" alt="Prediction Set 2">
+    <p>Estimated Crowd Count: {{ crowd_count_set2 }}</p>
+
+    <h2>Comparison</h2>
+    <p>Difference in Crowd Count: {{ crowd_count_diff }}</p>
+
+    <br>
+    <a href="/">Return to Home</a>
+</body>
+</html>
